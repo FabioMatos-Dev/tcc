@@ -39,7 +39,7 @@ header .menu_wrapper .nome h1 {
     background-size: cover;
     background-clip: text;
     color: transparent;
-    animation: animate 20s linear infinite;
+    animation: animate 30s linear infinite;
 }
 
 @keyframes animate {
