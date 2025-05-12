@@ -95,7 +95,7 @@ nav ul li a{
 
 .banner .saudacao h1, h2, h3 {
     color: #500863;
-    font-size: 120px;
+    font-size: 100px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -157,4 +157,3 @@ nav ul li a{
 .banner .change-text h3 .word .letter.behind{
     transform: rotateX(-90deg);
 }
-
