@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --primary: #0969DA;
     --background: #24292F;
@@ -17,23 +19,30 @@ body {
     box-sizing: border-box;
 }
 
-a, a:visited, a:hover, a:active {
-    text-decoration: none;
-}
-
-header .logo {
+header .navbar {
+    display: flex;
+    height: 90px;
     justify-content: left;
-    padding: 10px;
+    background-color: var(--background);
 }
 
-header .menu_wrapper .logo img {
+header .navbar .logo {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    padding: 10px;
+    padding-left: 50PX;
+}
+
+header .navbar .logo img {
     width: 70px;
     height: 70px;
     clip-path: circle(50% at 50% 50%);
 }
 
-header .menu_wrapper .nome h1 {
+header .navbar .logo h1 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-right: 0px;
     background: 
         url('stock.jpg')center;
     background-size: cover;
@@ -48,189 +57,104 @@ header .menu_wrapper .nome h1 {
     }
 }
 
-.menu_wrapper {
+.navbar{
     display: flex;
-    position: fixed;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.banner{
+    background: radial-gradient(#d3ebf2,#8de4f7);
+}
+
+.banner .saudacao{
+    padding: 80px;
+    flex-direction: column;
+    padding-bottom: 0px;
+}
+
+.banner .saudacao h1, h2, h3 {
+    color: #500863;
+    font-size: 120px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.banner .saudacao h1 {
+    text-shadow: 2px 2px 5px red;
+}
+
+.banner .saudacao h2{
+    font-size: 80px;
+    margin-bottom: 0px;
+}
+
+.banner .saudacao h3 {
+    font-size: 42.5px;
+    text-decoration: underline;
+}
+
+.banner .change-text{
+    padding-left: 80px;
+    padding-top: 0px;
+    min-height: 10vh;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    grid-gap: 1.5em;
+    color: #500863;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.banner .change-text h3{
+    display: inline-flex;
+    align-items: center;
     margin: 0;
-    padding: 0;
-    width: 100vw;
-    z-index: 2;
-    background: var(--background);
-   
-    padding: 0 1rem;
-    align-items: center;
+    vertical-align: top;
+    font-size: 90px;
 }
 
-
-/* NOVO BLOCO: Agrupamento da navegação e botões à direita */
-.right-content {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin-left: auto;
-}
-
-.navigation {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    align-items: center;
-    gap: 1.5rem;
-    background: var(--background);
-    padding-right: 80px;
-}
-
-.navigation > li {
-    display: flex;
-    position: relative;
-    cursor: pointer;
-    align-items: center;
-}
-
-.navigation > li > button > svg {
-    fill: var(--white);
-    color: var(--white);
-    transition: all 0.2s ease-in-out;
-}
-
-.navigation > li > a {
-    color: var(--white);
-    font-size: 0.875rem;
-    transition: all 0.2s ease-in-out;
-}
-
-.navigation > li > button {
-    color: var(--white);
-    border-bottom: 2px solid transparent;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-    font-weight: 500;
-    gap: 0.25rem;
-    opacity: 1;
-    align-items: center;
-    font-size: 0.875rem;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    background: none;
-    display: flex;
-    padding: 0.185rem 0;
-    position: relative;
-    transition: all 0.2s ease-in-out;
-}
-
-.dropdown {
+.banner .change-text h3 .word{
     position: absolute;
-    top: 2.625rem;
-    min-width: 15rem;
-    border-radius: 0.5rem;
-    background: var(--white);
-    display: none;
-    flex-direction: column;
-    padding: 1rem;
-    box-shadow: 0 5px 30px
-        rgba (27, 31, 35, 0.1),
-        0 0 1px rgba(27, 31, 35, 0.4),
-        0 1px 2px rgba(27, 31, 35, 0.15);
-    z-index: 2;
-    animation: fadeIn 0.2s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.99) translateY(0.7rem);
-        transform-origin: top;
-    }
-    to {
-        opacity: 1;
-        transform: scale(1) translateY(0);
-    }
-}
-
-.dropdown h3 {
-    font-size: 0.9250rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.list-menu-items {
     display: flex;
-    list-style-type: none;
-    flex-direction: column;
-    gap: 0.25rem;
+    opacity: 0;
 }
 
-.list-menu-items > li > a {
-    display: flex;
-    gap: 1rem;
-    font-size: 0.875rem;
-    width: 100%;
-    color: var(--gray);
+.banner .change-text h3 .word .letter{
+    transform-origin: center center 25px;
 }
 
-.list-menu-items > li > a:hover {
-    color: var(--primary);
+.banner .change-text h3 .word .letter.out{
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6,0,0.7,0.2);
 }
 
-.list-menu-items-with-description {
-    list-style-type: none;
+.banner .change-text h3 .word .letter.in{
+    transition: 0.38s ease;
 }
 
-.list-menu-items-with-description li {
-    display: flex;
-    padding: 0.25rem;
-    gap: 1rem;
-    width: 100%;
+.banner .change-text h3 .word .letter.behind{
+    transform: rotateX(-90deg);
 }
 
-.list-menu-items-with-description li:hover {
-    color: var(--primary);
-}
-
-.list-menu-items-with-description li svg {
-    width: 1rem;
-    height: 1rem;
-    stroke: var(--primary);
-}
-
-.item-title h3 {
-    font-size: 0.875rem;
-    font-weight: 600;
-}
-
-.navigation > li:hover .dropdown {
-    display: flex;
-    opacity: 1;
-}
-
-.action-buttons {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-.action-buttons a {
-    white-space: nowrap;
-    padding: 0.25rem 0.5rem;
-    transition: all 0.2s ease-in-out;
-    color: var(--white);
-}
-
-.action-buttons a:hover {
-    opacity: .75;
-}
-
-.secondary {
-    background: none;
-    outline: none;
-    border: none;
-}
-
-.primary {
-    border-radius: 0.5rem;
-    border: 1px solid var(--white);
-}
