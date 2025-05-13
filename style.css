@@ -117,6 +117,16 @@ nav ul li a{
     padding-bottom: 0px;
 }
 
+.banner .container1 .saudacao h5 {
+    font-size: 18px;
+    color: rgb(240, 22, 22);
+}
+
+.banner .container1 .saudacao h4 {
+    font-size: 25px;
+    color: rgb(75, 8, 54);
+}
+
 .banner .container1 .saudacao h1, h3 {
     color: #500863;
     font-size: 90px;
@@ -371,7 +381,7 @@ nav ul li a{
 
 .pitch .hook2 .card1 p {
     font-size: 15px;
-    text-align: left;
+    text-align: justify;
     padding-left: 0px;
 }
 
