@@ -93,8 +93,8 @@ nav ul li a{
     justify-content: space-between;
     align-items: flex-start;
     padding: 60px;
-    padding-top: 20px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 120px;
 
     gap: 20px;
     background: radial-gradient(#d3ebf2,#8de4f7);
