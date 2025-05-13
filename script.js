@@ -37,3 +37,8 @@ let changeText = ()=>{
 
 changeText();
 setInterval(changeText,3000)
+
+/////DATA ATUAL//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const dataAtual = new Date();
+const dataFormatada = dataAtual.toLocaleDateString('pt-BR'); // formato: dd/mm/aaaa
+document.getElementById("data-atual").textContent = dataFormatada;
