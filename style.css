@@ -218,35 +218,43 @@ nav ul li a{
     object-fit: cover;
     filter: drop-shadow(12px 12px 18px rgb(66, 65, 65));
 }
+/*---------------------------Fim Seção Imagens do Banner--------------------*/
 
+/*---------------------------Início Seção Pitch para o Visitante------------*/
 .pitch {
-    display: flex;
+    display: block;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     padding: 40px;
-    padding-top: 60px;
+    padding-top: 50px;
     background: radial-gradient(#f4bb9e,#65e22b);
 }
 
-.pitch .texto h1, p, .btn-box {
+/*-------------------------Início do Hook 1 ("Gancho 1") para captação atenção do visitante--*/
+.pitch .hook1 {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.pitch .hook1 .texto h1, p, .btn-box {
     padding: 80px;
     padding-top: 10px;
 }
 
-.pitch .texto h1 {
+.pitch .hook1 .texto h1 {
     font-size: 35px;
     font-weight:bolder;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-.pitch .texto p {
+.pitch .hook1 .texto p {
     font-size: 18px;
     padding-bottom: 10px;
 }
 
-.pitch .texto .btn-box {
+.pitch .hook1 .texto .btn-box {
     display: flex;
     padding: 5px;
     padding-top: 10px;
@@ -256,7 +264,7 @@ nav ul li a{
     height: 40px;
 }
 
-.pitch .texto .btn-box .btn{
+.pitch .hook1 .texto .btn-box .btn{
     display: flex; /* necessário para centralizar conteúdo */
     align-items: center; /* centraliza verticalmente */
     justify-content: center; /* centraliza horizontalmente */
@@ -277,11 +285,11 @@ nav ul li a{
     text-decoration: none;
 }
 
-.pitch .texto .btn:hover{
+.pitch .hook1 .texto .btn:hover{
     color: #12f7ff;
 }
 
-.pitch .texto .btn::before{
+.pitch .hook1 .texto .btn::before{
     content: "";
     position: absolute;
     top: 0;
@@ -293,24 +301,147 @@ nav ul li a{
     transition: width 0.4s;
 }
 
-.pitch .texto .btn-box .btn:hover {
+.pitch .hook1 .texto .btn-box .btn:hover {
     color: black; /* cor do texto ao passar o mouse */
 }
 
-.pitch .texto .btn-box .btn:hover::before {
+.pitch .hook1 .texto .btn-box .btn:hover::before {
     width: 100%;
 }
 
-.pitch .stock-board {
+.pitch .hook1 .stock-board {
     padding: 50px;
     padding-top: 15px;
     padding-left: 70px;
+    padding-bottom: 5px;
 }
 
-.pitch .stock-board img {
+.pitch .hook1 .stock-board img {
     width: 400px;
     height: 270px;
     justify-content: center;
     border-radius: 350px;
-    
+}
+
+/*-------------------------Início do Hook 1 ("Gancho 1") para captação atenção do visitante----*/
+.pitch .hook2 {
+    display: block;
+    padding-left: 80px;
+    padding-top: 5px;
+    padding-right: 20px;
+   
+}
+
+.pitch .hook2 .texto{
+    padding: 20px;
+    width: 100%;
+    background-color: #b0cbf5;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 20px 20px 10px
+}
+
+.pitch .hook2 .texto h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.pitch .hook2 .box {
+    display: flex;
+    padding: 50px;
+}
+
+.pitch .hook2 .box .card1 {
+    width: 320px;
+    height: 180px;
+    padding: 15px;
+    background-color: #c9ced6;
+}
+
+.pitch .hook2 .card1 img {
+    width: 30px;
+    height: 30px;
+}
+
+.pitch .hook2 .card1 h4 {
+    font-size: 20px;
+    text-align: left;
+}
+
+.pitch .hook2 .card1 p {
+    font-size: 15px;
+    text-align: left;
+    padding-left: 0px;
+}
+
+
+.pitch .hook2 .box .card2 {
+    width: 320px;
+    height: 180px;
+    padding: 15px;
+    background-color: #6d6e70;
+}
+
+.pitch .hook2 .card2 img {
+    width: 30px;
+    height: 30px;
+}
+
+.pitch .hook2 .card2 h4 {
+    font-size: 20px;
+    text-align: left;
+}
+
+.pitch .hook2 .card2 p {
+    font-size: 15px;
+    text-align: left;
+    padding-left: 0px;
+}
+
+.pitch .hook2 .box .card3 {
+    width: 320px;
+    height: 180px;
+    padding: 15px;
+    background-color: #c9ced6;
+}
+
+.pitch .hook2 .card3 img {
+    width: 30px;
+    height: 30px;
+}
+
+.pitch .hook2 .card3 h4 {
+    font-size: 20px;
+    text-align: left;
+}
+
+.pitch .hook2 .card3 p {
+    font-size: 15px;
+    text-align: left;
+    padding-left: 0px;
+}
+
+
+.pitch .hook2 .box .card4 {
+    width: 320px;
+    height: 180px;
+    padding: 15px;
+    background-color: #6d6e70;
+}
+
+.pitch .hook2 .card4 img {
+    width: 30px;
+    height: 30px;
+}
+
+.pitch .hook2 .card4 h4 {
+    font-size: 20px;
+    text-align: left;
+}
+
+.pitch .hook2 .card4 p {
+    font-size: 15px;
+    text-align: left;
+    padding-left: 0px;
 }
