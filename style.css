@@ -823,6 +823,12 @@ nav ul li a {
     background: repeating-conic-gradient(from var(--a),#ff2770 0%, #ff2770 5%, transparent 5%, transparent 40%, #ff2770 50% );
     animation: animar 0.3s linear infinite;
     border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.7s;
+}
+
+.call-to-action .CTA .btn-box:hover{
+    transform: scale(1.3);
 }
 
 .call-to-action .CTA .btn-box::before{
@@ -903,149 +909,6 @@ nav ul li a {
     font-size: 30px;
     padding: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*----------    RESPONSIVIDADE PARCIAL -------------------*/
-
-@media (max-width: 768px) {
-    .banner {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .banner .container1, .banner .container2 {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .banner .container2 img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-
-
-/*----------KeyFrames-----------------------------------------------------------------------------------------------------------------*/
-
-@keyframes morph{
-    0%,
-    100%{
-        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-    }
-    30%{
-        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
-    }
-
-    60%{border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
-    }
-
-    80%{border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
-    }
-}
-
-@keyframes Falta-de-Visibilidade-em-Tempo-Real {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 70%;
-    }
-}
-
-@keyframes Previsoes-de-Demandas-Imprecisas {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 65%;
-    }
-}
-
-@keyframes Processos-Manuais-e-Erros-Humanos {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 60%;
-    }
-}
-
-@keyframes Falta-de-Integracao-Entre-Setores {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 55%;
-    }
-}
-
-@keyframes Inventarios-Desatualizados {
-    0%{
-        width: 0%;
-    }
-    100%{
-        width: 63%;
-    }
-}
-
-@keyframes glow{
-    0%{
-        background: var(--second-bg-color);
-        box-shadow: none;
-    }
-    100%{
-        background: var(--business-color);
-        box-shadow: var(--main-bg-color);
-    }
-}
-
-@keyframes slideAnimation{
-    0% {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
- @keyframes flicker {
-    0% { opacity: 0.4; }
-    25% { opacity: 0.2; }
-    50% { opacity: 0.4; }
-}
-
-@keyframes animar{
-    0%{
-        --a: 0deg;
-    }
-    100%{
-        --a: 360deg;
-    }
-}
-
-@property --a{
-    syntax: '<angle>';
-    inherits: false; 
-    initial-value: 0deg;
-}
-
-
-
 
 
 
