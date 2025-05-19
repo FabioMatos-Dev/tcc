@@ -533,7 +533,7 @@ nav ul li a {
     box-sizing: border-box;
 }
 
-.fun-facts .statistics .CTA {
+.fun-facts .statistics {
     display: block;
     flex-direction: column;
     width: 100%;
@@ -543,7 +543,7 @@ nav ul li a {
 
 }
 
-.fun-facts .statistics .CTA .title {
+.fun-facts .statistics .title {
     display: block;
     flex-direction: column;
     justify-content: center;
@@ -552,19 +552,19 @@ nav ul li a {
     padding-bottom: 10px;
 }
 
-.fun-facts .statistics .CTA .title h2, h3{
+.fun-facts .statistics .title h2, h3{
     text-align: center;
     padding: 5px;
     
 }
 
-.fun-facts .statistics .CTA .title h2 {
+.fun-facts .statistics .title h2 {
     font-size: 50px;
     color: var(--business-color);
     text-shadow: 0.1em 0.1em 0.2em black;
 }
 
-.fun-facts .statistics .CTA .title h3 {
+.fun-facts .statistics .title h3 {
     font-size: 30px;
     color: var(--second-font-color);
 }
@@ -749,6 +749,170 @@ nav ul li a {
     animation-delay: calc(var(--i)*0.05s);
 }
 
+.call-to-action {
+    display: flex;
+    flex-direction: row;
+    height: 650px;
+    background: radial-gradient(var(--second-bg-color), var(--main-bg-color));
+}
+
+.call-to-action .background1, .background2 {
+    background-image: url("img/logo.estoque_facil.png"); 
+    background-repeat: repeat-x; 
+    opacity : 0.4;
+    animation: flicker 1s infinite;
+    height: 300px;
+    width: 600px;
+    padding-top: 80px;
+}
+
+.call-to-action .CTA {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
+    width: 600px;
+    padding: 10px;
+    margin-top: 120px;
+    -moz-box-shadow: inset 0 0 10px #777777;
+    -webkit-box-shadow: inset 0 0 10px #777777;
+    box-shadow: inset 0 0 10px #777777;
+    border: 5px outset var(--business-color);
+    background-color: #f7f4df;
+    
+}
+
+.call-to-action .CTA .name {
+    background-color: var(--business-color);
+}
+
+.call-to-action .CTA h1, h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+.call-to-action .CTA h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: url('img/stock.jpg') center;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: animate 30s linear infinite;
+}
+
+.call-to-action .CTA h3 {
+    font-size: 30px;
+}
+
+.call-to-action .CTA h3 {
+    font-size: 30px;
+}
+
+.call-to-action .CTA .btn-box {
+    display: block;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-left: 60px;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    width:  380px ;
+    height: 180px ;
+    background: repeating-conic-gradient(from var(--a),#ff2770 0%, #ff2770 5%, transparent 5%, transparent 40%, #ff2770 50% );
+    animation: animar 0.3s linear infinite;
+    border-radius: 20px;
+}
+
+.call-to-action .CTA .btn-box::before{
+    content: '';
+    position: absolute;
+    inset: 14px;
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(from var(--a),#45f3ff 0%, #45f3ff 5%, transparent 5%, transparent 40%, #45f3ff 50% );
+    animation: animar 0.3s linear infinite;
+    border-radius: 20px;   
+}
+
+.call-to-action .CTA .btn-box::after{
+    content: '';
+    position: absolute;
+    inset: 14px;
+    background-color: var(--second-bg-color);
+    border-radius: 15px;
+    border: solid 8px #25252b;
+
+}
+
+.call-to-action .CTA .btn-box .button { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 260px;
+    height: 120px;
+}
+
+.call-to-action .CTA .btn-box .button .btn {  
+    align-self: center;
+    background-color: #4a3051;
+    width: 260px;
+    height: 50px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: color 0.6s;
+    box-shadow: 0 0 0.8rem #32b7f4;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 2px solid #12f7ff;
+    text-decoration: none;
+}
+
+.call-to-action .CTA .btn-box .btn:hover {
+    color: #12f7ff;
+}
+
+.call-to-action .CTA .btn-box .btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #abf551; 
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: width 0.4s;
+    
+}
+
+.call-to-action .CTA .btn-box .btn:hover {
+    color: black; 
+}
+
+.call-to-action .CTA .btn-box .btn:hover::before {
+    width: 100%;
+} 
+
+.call-to-action .CTA .btn-box .button .btn p {  
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -859,6 +1023,26 @@ nav ul li a {
     }
 }
 
+ @keyframes flicker {
+    0% { opacity: 0.4; }
+    25% { opacity: 0.2; }
+    50% { opacity: 0.4; }
+}
+
+@keyframes animar{
+    0%{
+        --a: 0deg;
+    }
+    100%{
+        --a: 360deg;
+    }
+}
+
+@property --a{
+    syntax: '<angle>';
+    inherits: false; 
+    initial-value: 0deg;
+}
 
 
 
