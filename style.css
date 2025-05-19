@@ -150,7 +150,6 @@ nav ul li a {
     flex-direction: column;
     justify-content: left;
     padding-bottom: 0px;
-
 }
 
 .banner .container1 .change-text .easy-stock h2 {
@@ -377,7 +376,7 @@ nav ul li a {
     padding: 15px;
     background-color: #c9ced6;
     cursor: pointer;
-    transition: transform 0.7s;
+    transition: transform 5s;
 }
 
 .pitch .hook2 .box .card1:hover{
@@ -489,6 +488,268 @@ nav ul li a {
     padding-left: 0px;
 }
 
+.fun-facts {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    background: radial-gradient(var(--main-bg-color), var(--third-bg-color));
+}
+
+.fun-facts .presentation {
+   display: block;
+    flex-direction: column;
+    width: 100%; /* ocupa metade da tela */
+    box-sizing: border-box;
+    padding-top: 60px;
+}
+
+.fun-facts .presentation h2 {
+    display: block;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    color: var(--business-color);
+}
+
+.fun-facts .presentation p {
+    display: block;
+    flex-direction: column;
+    justify-content: left;
+    text-align: justify;
+    padding-left: 80px;
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+.fun-facts .statistics {
+     display: block;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.fun-facts .statistics .CTA {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px;
+    padding-top: 5px;
+    padding-bottom: 2.5px;
+
+}
+
+.fun-facts .statistics .CTA .title {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.fun-facts .statistics .CTA .title h2, h3{
+    text-align: center;
+    padding: 5px;
+    
+}
+
+.fun-facts .statistics .CTA .title h2 {
+    font-size: 50px;
+    color: var(--business-color);
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.fun-facts .statistics .CTA .title h3 {
+    font-size: 30px;
+    color: var(--second-font-color);
+}
+
+.fun-facts .statistics .data {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    padding-top: 2.5px;
+}
+
+.fun-facts .statistics .data .data-board {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 5px;
+    padding-top: 2.5px;
+}
+
+.fun-facts .statistics .data .data-board .data-left {
+    display: block;
+    width: 50%;
+    flex-direction: column;
+   
+}
+
+.fun-facts .statistics .data .data-board .data-left h3 {
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.fun-facts .statistics .data .data-board .data-left .data-bar {
+    margin-bottom: 1.3rem;
+}
+
+.fun-facts .statistics .data .data-main .data-left h3{
+    margin-bottom: 1rem;
+    font-size: 10px;
+    text-align: center;
+}
+
+/*---data Left--------------------------------*/
+
+.data-bar .info {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    justify-content: left;
+    align-items: left;
+}
+
+.data-bar .info p {
+    font-size: 15px;
+    text-align: left;
+    height: 60px;
+    padding: 0px;
+}
+
+.data-bar .bar {
+    height: 100%;
+    height: 10px;
+    background: var(--auxiliary-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.data-bar .bar span {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--business-color);
+    border-radius: 25px;
+    box-shadow: var(--third-bg-color);
+}
+
+.data-bar .bar .Falta-de-Visibilidade-em-Tempo-Real{
+    width: 70%;
+    animation: Falta-de-Visibilidade-em-Tempo-Real 1s;
+}
+
+.data-bar .bar .Previsoes-de-Demandas-Imprecisas{
+    width: 65%;
+    animation: Previsoes-de-Demandas-Imprecisas 1.2s;
+}
+
+.data-bar .bar .Processos-Manuais-e-Erros-Humanos {
+    width: 60%;
+    animation: Processos-Manuais-e-Erros-Humanos 1.5s;
+}
+
+.data-bar .bar .Falta-de-Integracao-Entre-Setores {
+    width: 55%;
+    animation: Falta-de-Integracao-Entre-Setores 1.7s;
+}
+
+.data-bar .bar .Inventarios-Desatualizados {
+    width: 63%;
+    animation: Inventarios-Desatualizados 1.7s;
+}
+
+/*----- Data Right ---------------------------------------*/
+
+
+.fun-facts .statistics .data .data-board .data-right {
+    display: block;
+    flex-direction: column;
+    width: 50%;
+}
+
+.fun-facts .statistics .data .data-board .data-right h3 {
+    font-size: 20px;
+    padding-top: 2px;
+}
+
+.fun-facts .statistics .data .data-board .data-right .containers {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+
+.fun-facts .statistics .data .data-board .data-right .container1, .container2 {
+    display: block;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+.fun-facts .statistics .data .data-board .data-right .container1 .box, .container2 .box{
+    position: relative;
+    margin: 5px 0;
+    flex: 1 1 7.5rem;
+    padding: 5px;
+    align-self: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.box .text{
+    text-align: center;
+    color: var(--main-font-color);
+    font-size: 1rem;
+    padding-top: 30px;
+}
+
+.box .text big{
+    font:200;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.box .text small{
+    display: block;
+    font-weight: 600;
+}
+
+.circle{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;    align-items: center; 
+}
+
+.circle .points{
+    width: 2px;
+    height: 10px;
+    background-color: var(--bg-color);
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
+}
+
+.points.marked{
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i)*0.05s);
+}
+
+
 
 
 /*----------    RESPONSIVIDADE PARCIAL -------------------*/
@@ -509,5 +770,95 @@ nav ul li a {
         height: auto;
     }
 }
+
+
+
+/*----------KeyFrames-----------------------------------------------------------------------------------------------------------------*/
+
+@keyframes morph{
+    0%,
+    100%{
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    30%{
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+
+    60%{border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+
+    80%{border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    }
+}
+
+@keyframes Falta-de-Visibilidade-em-Tempo-Real {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes Previsoes-de-Demandas-Imprecisas {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+@keyframes Processos-Manuais-e-Erros-Humanos {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes Falta-de-Integracao-Entre-Setores {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 55%;
+    }
+}
+
+@keyframes Inventarios-Desatualizados {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 63%;
+    }
+}
+
+@keyframes glow{
+    0%{
+        background: var(--second-bg-color);
+        box-shadow: none;
+    }
+    100%{
+        background: var(--business-color);
+        box-shadow: var(--main-bg-color);
+    }
+}
+
+@keyframes slideAnimation{
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
 
