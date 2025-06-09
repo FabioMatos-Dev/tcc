@@ -1,42 +1,49 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="assets/style.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <!-----------------------------Início do Header------------------------------------------>
     <header>
+        <div class="logo">
+            <img src="img/logo.estoque_facil.png">
+            <h1 style="font-size: 60px;">ESTOQUE FÁCIL</h1>
+        </div>
+
         <div class="navbar">
-            <div class="logo">
-                <img src="img/logo.estoque_facil.png">
-                <h1 style="font-size: 60px;">ESTOQUE FÁCIL</h1>
-            </div>
             <nav>
-                <ul id="MenuItens">
+                <ul id="MenuItens" class="MenuItens">
                     <li><a href="index.html" title="Início">Início</a></li>
-                    <li><a href="sobre.html" title="Sobre">Sobre</a></li>
-                    <li><a href="funcionalidades.html" title="Funcionalidades">Funcionalidades</a></li>
-                    <li><a href="referencias.html" title="Referências">Referências</a></li>
-                    <li><a href="desenvolvedores.html" title="Desenvolvedores">Desenvolvedores</a></li>
-                    <li><a href="contato.html" title="Contato">Contato</a></li>
+                    <li><a href="pages/sobre.html" title="Sobre">Sobre</a></li>
+                    <li><a href="pages/funcionalidades.html" title="Funcionalidades">Funcionalidades</a></li>
+                    <li><a href="pages/referencias.html" title="Referências">Referências</a></li>
+                    <li><a href="pages/desenvolvedores.html" title="Desenvolvedores">Desenvolvedores</a></li>
+                    <li><a href="pages/contato.html" title="Contato">Contato</a></li>
                 </ul>
             </nav>
-        </div>          
+        </div>
+        
+        <div class="login">
+            <div class="btn-box">
+                <a href="pages/sobre.html" class="btn"><b>Login</b></a>
+            </div>
+        </div>
     </header>
     <!-------------------------------Final do Header---------------------------------------->
 
     <!-------------------------------Início do Banner--------------------------------------->
     <div class="banner">
         <!---------------------------Início da Saudação ao Visitante------------------------>
-        <div class="container1">
+        <div class="container1 scroll-scale">
             <div class="saudacao">
-                <h5>Hoje é <span id="data-atual"></span></h5>
+                <h5 id="top">Hoje é <span id="data-atual"></span></h5>
                 <h4>Bem-vindo(a) ao</h4>
-                <h1><strong>ESTOQUE FÁCIL</strong></h1>
+                <h1><b>ESTOQUE FÁCIL</b></h1>
                 <br>
                 <h3>GESTÃO DE ESTOQUE SEM SUFOCO!</h3>   
             </div>
@@ -47,9 +54,9 @@
                     <h3>Um sistema</h3>
                     <h3 style="color:blue">
                         <span class="word">Simples</span>
-                        <span class="word">intuitivo</span>
-                        <span class="word">seguro</span>
-                        <span class="word">moderno</span>
+                        <span class="word">Intuitivo</span>
+                        <span class="word">Seguro</span>
+                        <span class="word">Moderno</span>
                     </h3>
                 </div>
             </div>
@@ -58,7 +65,7 @@
         <!-------------------------Fim da Saudação ao Visitante------------------------------------>
 
         <!-------------------------Início das Imagens do Banner------------------------------------->
-        <div class="container2"> 
+        <div class="container2 scroll-scale"> 
             <img src="img/tech1.jpg" alt="">
         </div>
         <!-------------------------Fim das Imagens do Banner---------------------------------------->
@@ -68,21 +75,21 @@
     <!-----------------------------Início do Pitch para Visitantes----------------------------------->
     <div class="pitch">
         <!-------------------------Início do Hook 1 ("Gancho 1") para captação atenção do visitante-->
-        <div class="hook1">
+        <div class="hook1 scroll-bottom">
             <div class="texto">
-                <h1><strong>Sistema de controle de estoque 100% online.</strong></h1>
+                <h1><b>Sistema de controle de estoque 100% online.</b></h1>
                 <p>Simplifique e revolucione de vez o controle de estoque do seu empreendimento com o<br>
-                    sistema <b>Estoque Fácil</b> uma solução <b>100% online</b>, integrado e com todos<br>
+                    sistema <b>Estoque Fácil</b>, uma solução <b>100% online</b>, integrado e com todos<br>
                     os recursos fundamentais para melhorar o desempenho<br>
                     da sua <b>gestão de estoque</b>.<br>
                     <br>
                     Tenha o máximo de produtividade com uma ferramenta de gestão de estoque que<br>
-                    automatiza cada etapa da movimentação de produtos, tornando os <em>processos <br>
-                    mais ágeis, práticos e fáceis de usar</em> — tudo pensado para facilitar<br>
+                    automatiza cada etapa da movimentação de produtos, tornando os <i>processos <br>
+                    mais ágeis, práticos e fáceis de usar</i> — tudo pensado para facilitar<br>
                     sua rotina empresarial.
                 </p>
                 <div class="btn-box">
-                    <a href="sobre.html" class="btn"><strong>Quero conhecer</strong></a>
+                    <a href="pages/sobre.html" class="btn"><b>Quero conhecer</b></a>
                 </div>
             </div>
             <div class="stock-board">
@@ -93,30 +100,31 @@
 
         <!-------------------------Início do Hook 2 ("Gancho 2") para captação atenção do visitante-->
         <div class="hook2">
-            <div class="texto">
-                <div class="box-text">
+            <div class="texto ">
+                <div class="box-text scroll-bottom">
                     <h2>Buscando facilidade e eficiência na sua gestão de estoque?</h2>
-                    <h2>Migre agora mesmo para o <strong>Estoque Fácil!</strong></h2>
+                    <h2>Migre agora mesmo para o <b>Estoque Fácil!</b></h2>
                 </div>
             </div>
-            <div class="box">
+            <div class="box scroll-bottom">
                 <div class="card1">
                     <img src="img/pc.png" alt="">
                     <h4>Gestão de estoque versátil</h4>
-                    <p>Faça gestão estoque de forma simples
-                    e rápida, mesmo com uma variedade
-                    de produtos que em seu catálogo</p>
+                    <p>Gerencie seu estoque de forma simples
+                       e rápida, mesmo com catálogo de produtos
+                       variados.
+                    </p>
                 </div>
                 <div class="card2">
                     <img src="img/graphic.png" alt="">
-                    <h4>Entrada automatizada no estoque</h4>
+                    <h4>Entrada automatizada</h4>
                     <p>Com poucos comandos você terá domínio
                         completo sobre o seu estoque.
                     </p>
                 </div>
                 <div class="card3">
                     <img src="img/processo.png" alt="">
-                    <h4>Processos totalmente otimizados</h4>
+                    <h4>Processos otimizados</h4>
                     <p>Não perca tempo com sistemas complexos
                         e caros. Opte pela otimização de tarefas 
                         cotidianas.
@@ -125,9 +133,8 @@
                 <div class="card4">
                     <img src="img/interesse.png" alt="">
                     <h4>Custos mínimos X Lucros máximos</h4>
-                    <p>Soluções adaptadas para as necessidades 
-                        do seu negócio cortam custos supérfluos
-                        e maximizam lucros.
+                    <p>Soluções otimizadas para o seu negócio cortam 
+                        custos supérfluos e maximizam lucros.
                     </p>
                 </div>
             </div>
@@ -136,41 +143,42 @@
     </div>
        
     <div class="fun-facts">
-        <div class="presentation">
+        <div class="presentation scroll-bottom">
             <h2>Não quebre a cara na hora<br>
             de escolher seu sistema de gestão de estoque</h2>
             <br>
             <p>Ao escolher um sistema informatizado de gestão de estoque
             você se depara com as mesmas angustiantes e desafiadoras questões.
-            Você não está só neste dilema e o sistema <strong>Estoque Fácil</strong> oferece
+            Você não está só neste dilema e o sistema <b>Estoque Fácil</b> oferece
             soluções para negócios exatamente igual ao seu.<br>
             <br>
-            Pesquisas publicadas pela <em>traject.com.br</em>, <em>Ceaseo</em>, <em>IT Section</em>
-            e <em>www.slideshare.com</em> indicam  os principais pontos de descontentamento com
+            Pesquisas publicadas pela <i>traject.com.br</i>, <i>Ceaseo</i>, <i>IT Section</i>
+            e <i>www.slideshare.com</i> indicam  os principais pontos de descontentamento com
             outros sistemas informatizados de gestão de estoque apontados por seus usuários.
-            Com o <strong>Estoque Fácil</strong> você elimina esta dor de cabeça.<br>
+            Com o <b>Estoque Fácil</b> você elimina esta dor de cabeça.<br>
             <br>
             Estas pequisas indicam também características e funcionalidades
-            que este público deseja encontrar nestes sistemas. O <strong>Estoque Fácil</strong>
+            que este público deseja encontrar nestes sistemas. O <b>Estoque Fácil</b>
             já foi concebido levando em consideração as necessidades dos seus usuários, não
             importanto as limitações e ideias pré-concebidas dos seus desenvolvedores.<br>
             </p>
         </div>
-        <div class="statistics">
+        <div class="statistics scroll-bottom">
             
             <div class="title">
                 <h2>CHEGA DE INDECISÃO!</h2>
-                <h3>Veja as estatísticas e escolha <strong>Estoque Fácil</strong>.</h3>
+                <h3>Veja as estatísticas e escolha <b>Estoque Fácil</b>.</h3>
             </div>
             
             <div id="data" class="data">  
-                <div class="data-board">
+                <div class="data-board scroll-scale">
                      <!---------------------Data Left----------------------------------->
                     <div class="data-left">
                         <h3>Deficiências dos sistemas atuais</h3>
                         <div class="data-bar">
                             <div class="info">
-                                <p>Falta de Visibilidade em Tempo Real</p>&nbsp;
+                                <p>Falta de Visibilidade em Tempo Real</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;
                                 <p>70%</p>
                             </div>
                             <div class="bar">
@@ -180,7 +188,8 @@
 
                         <div class="data-bar">
                             <div class="info">
-                                <p>Previsões de Demandas Imprecisas</p>&nbsp;
+                                <p>Previsões de Demandas Imprecisas</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;
                                 <p>65%</p>
                             </div>
                             <div class="bar">
@@ -190,7 +199,7 @@
 
                         <div class="data-bar">
                             <div class="info">
-                                <p>Processos Manuais e Erros Humanos</p>&nbsp;
+                                <p>Processos Manuais e Erros Humanos</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <p>60%</p>
                             </div>
                             <div class="bar">
@@ -200,7 +209,8 @@
 
                         <div class="data-bar">
                             <div class="info">
-                                <p>Falta de Integração Entre Setores</p>&nbsp;
+                                <p>Falta de Integração Entre Setores</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;
                                 <p>55%</p>
                             </div>
                             <div class="bar">
@@ -210,7 +220,8 @@
 
                         <div class="data-bar">
                             <div class="info">
-                                <p>Inventários Desatualizados</p>&nbsp;
+                                <p>Inventários Desatualizados</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <p>63%</p>
                             </div>
                             <div class="bar">
@@ -268,7 +279,7 @@
         <div class="background1">
             <img src="img/logo.estoque_facil.png" alt="" width="550px" height="550px">
         </div>
-        <div class="CTA">
+        <div class="CTA scroll-scale">
             <h3>Comece Agora com</h3>
             <div class="name"><h1>ESTOQUE FÁCIL</h1></div>
             <div class="btn-box">
@@ -282,11 +293,171 @@
         </div>
     </div>
 
-    <div class="footer">
+    <div class="pitch-final">
+        <div class="title scroll-bottom"><h2><b>Segmentos</b> atendidos pelo <b>Estoque Fácil</b></h2></div>
 
+        <div class="box scroll-bottom">
+            <div class="box1">
+                <div class="card1">
+                    <img src="img/carrinho-de-compras.png" alt="">
+                    <h4>Atacado e Varejo</h4>
+                    <p>O <b>Estoque Fácil</b> é voltado para o atado e o 
+                       varejo sendo a escolha certa para mercados, 
+                       mercearias e demais empreendimentos 
+                       do gênero.
+                    </p>
+                </div>
+                <div class="card2">
+                    <img src="img/manutencao_computadores.png" alt="">
+                    <h4>Manutenção de Computadores</h4>
+                    <p>Com o <b>Estoque Fácil</b> negócios que
+                        lidam com manutenção de Computadores
+                        farão controle de suprimentos
+                        de maneira rápida e fácil.
+                    </p>
+                </div>
+                <div class="card3">
+                    <img src="img/salao-beleza.png" alt="">
+                    <h4>Salão de Beleza/Barbearias</h4>
+                    <p>Salões de beleza e Barbearias precisam 
+                        controlar seus suprimentos para 
+                        uma gestão de sucesso.
+                    </p>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="card4"> 
+                    <img src="img/loja-de-roupas.png" alt="">
+                    <h4>Loja de Roupas</h4>
+                    <p>O <b>Estoque Fácil</b> destina-se a gestão de estoque
+                       para negócios de pequeno e médio porte e a atuação 
+                       no ramo do vestuário requer rígido controle de estoque.
+                    </p>
+                </div>
+                <div class="card5">
+                    <img src="img/loja-celulares.png" alt="">
+                    <h4>Loja de Celulares</h4>
+                    <p>Controlar componentes no estoque 
+                       de empreendimentos de venda e manutenção de
+                       Celulares é uma grande dor de cabeça. O <b>Estoque 
+                       Fácil</b> acaba com este problema.
+                    </p>
+                </div>
+                <div class="card6">
+                    <img src="img/mecanica-auto_pecas.png" alt="">
+                    <h4>Oficina Mecânica e Auto Peças</h4>
+                    <p>Para oficinas mecânicas e lojas de auto peças
+                       o sistema <b>Estoque Fácil</b> oferece 
+                       mecanismos de gestão de estoque 
+                       simples e eficiente.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!-------------------------------------Footer----------------------------------------->
+    <div class="footer">
+        <div class="menu-footer">
+            <div class="logo-footer">
+                <div class="circle-text">
+                    <svg viewBox="0 0 200 200">
+                        <defs>
+                            <path id="circlePath"
+                                d="M 100, 100
+                                   m -75, 0
+                                   a 75,75 0 1,1 150,0
+                                   a 75,75 0 1,1 -150,0" />
+                        </defs>
+                        <text fill="#000">
+                            <textPath href="#circlePath" startOffset="0%">
+                                Estoque Fácil • Estoque Fácil • Estoque Fácil • 
+                            </textPath>
+                        </text>
+                    </svg>
+                </div>
+                <img src="img/logo.estoque_facil.png" alt="Logo Estoque Fácil">
+            </div>
 
-    <script src="script.js"></script>
+            <div class="nav-footer">
+                <h3>Navegação</h3>
+                <br>
+                <ul>
+                    <li><a href="index.htm" title="Início">Início</a></li>
+                    <li><a href="pages/sobre.html" title="Sobre">Sobre</a></li>
+                    <li><a href="pages/funcionalidades.html" title="Funcionalidades">Funcionalidades</a></li>
+                    <li><a href="pages/referencias.html" title="Referências">Referências</a></li>
+                    <li><a href="pages/desenvolvedores.html" title="Desenvolvedores">Desenvolvedores</a></li>
+                    <li><a href="pages/contato.html" title="Contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="funcionalidades">
+                <h3>Funcionalidades</h3>
+                <br>
+                <ul>
+                    <li><a href="index.html" title="Início">Cadastro de usuário</a></li>
+                    <li><a href="index.html" title="Início">Cadastro de produtos</a></li>
+                    <li><a href="index.html" title="Início">Cadastro de fornecedor</a></li>
+                    <li><a href="index.html" title="Início">Cadastro de cliente</a></li>
+                    <li><a href="index.html" title="Início">Entrada de produto</a></li>
+                    <li><a href="index.html" title="Início">Saída de produtos</a></li>
+                    <li><a href="index.html" title="Início">Relatório de inventário</a></li>
+                </ul>
+            </div>
+
+            <div class="contatos">
+                <h3>Contatos</h3>
+                <br>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/fabiomatos.instaspace/"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://m.facebook.com/fabiomatos.facepage/?ref=bookmarks"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.linkedin.com/in/fabio-de-matos-03664243"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://linktr.ee/fabio_matos"><i class='bx bx-link' ></i></a> 
+                </div>
+                <div class="mail-email">
+                    <h4>Endereço e E-mail</h4>
+                    <p>Rua Desembargador Westphalen, nº 15, Centro
+                        Curitiba/PR - CEP 80010-903
+                        <i>atendimento.estoquefacil@estoquefacil.com.br</i>
+                    </p>
+                    <br>
+                    <h4>Telefone: </h4><p>(41)3598-4713</p>
+                </div>
+            </div>
+
+            <div class="site">
+                <h3>Site</h3>
+                <br>
+                <ul>
+                    <li><a href="index.html" title="Início">Termos de uso</a></li>
+                    <li><a href="index.html" title="Início">Política de privacidade e segurança</a></li>
+                    <li><a href="index.html" title="Início">Declaração de uso de cookies</a></li>
+                </ul>
+            </div>
+
+            <div class="seta-topo">
+                <a href="#top">
+                    <img src="img/seta_up.png" alt="">
+                </a>
+            </div>
+
+            <div class="chame-whatsapp">
+                <a href="https://wa.me/5541995782075?text=Ol%C3%A1%20Seja%20bem-vindo(a)%20ao%20Estoque%20F%C3%A1cil.%20Deixe%20sua%20mensagem.%20Responderemos%20assim%20que%20poss%C3%ADvel." 
+                         target="_blank">
+                    <img src="img/Incone-Whatsapp.png" alt="WhatsApp" style="width:50px;height:50px;">
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="creditos">
+            <h1>Estoque Fácil</h1>
+            <h2>Lex Star Solutions Soluções Tecnológicas Ltda. CNPJ 31.357.613/0001-04</h2>
+            <h3>&copy 2025 Lex Star Solutions - Todos os Direitos Reservados<br>
+                Desenvolvido por Adriano Moroti e Fabio de Matos
+            </h3>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
 </body>
 </html>
