@@ -2051,7 +2051,7 @@ body {
 
 .section {
     padding: 50px 20px;
-    background: radial-gradient(#fdf1fd, #ebf0ff);
+    background: radial-gradient(var(--main-bg-color), var(--third-bg-color));
 }
 
 .section-title h1 {
