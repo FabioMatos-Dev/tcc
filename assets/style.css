@@ -11,7 +11,7 @@
     --navbar-height: 3.75rem;
 }
 
-/*-------------------------------------------------------------PÁGINA INDEX----------------------------------------------------------*/
+/*-------------------------------------------------------------HEADER-NAVBAR (Todas as páginas)---------------------------------------*/
 
 body {
     font-family: "Roboto", sans-serif;
@@ -166,6 +166,8 @@ header .login .btn::before{
 }
 /*-----------------------------Fim do Header----------------------------------*/
 
+
+/*-------------------------------------------------------------PÁGINA INÍCIO------------------------------------------------------------*/
 /*-----------------------------Início do Banner-------------------------------*/
 .banner {
     display: flex;
@@ -1543,8 +1545,7 @@ footer .menu-footer .seta-topo a {
     font-size: 12px;
 }
 
-
-/*-------------------------------------------------------------PÁGINA SOBRE----------------------------------------------------------*/
+/*-------------------------------------------------------------PÁGINA SOBRE------------------------------------------------------------*/
 
 .apresentacao {
     display: flex;
@@ -2026,6 +2027,153 @@ footer .menu-footer .seta-topo a {
     color: var(--business-color);
 }
 
+/*-------------------------------------------------------------PÁGINA FUNCIONALIDADES--------------------------------------------------*/
+
+
+
+
+
+/*-------------------------------------------------------------PÁGINA REFERÊNCIAS------------------------------------------------------*/
+html {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+}
+
+.section {
+    padding: 50px 20px;
+    background: radial-gradient(#fdf1fd, #ebf0ff);
+}
+
+.section-title h1 {
+    font-size: 32px;
+    color: #a60789;
+    text-align: center;
+    font-weight: 800;
+}
+
+.section-title h3 {
+    text-align: center;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 10px auto 40px;
+    color: #555;
+}
+
+.swiper-container {
+    padding-bottom: 60px;
+}
+
+.swiper-slide {
+    opacity: 0.5;
+    transform: scale(0.9);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.testi-item {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    padding: 30px 20px 60px;
+    position: relative;
+    text-align: center;
+}
+
+.testi-avatar {
+    width: 90px;
+    height: 90px;
+    margin: -60px auto 20px;
+}
+
+.testi-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.listing-rating i {
+    color: #4810e3;
+    margin: 2px;
+}
+
+.testimonials-text p {
+    font-style: italic;
+    color: #555;
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.testimonials-avatar h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #7d93b2;
+}
+
+.testimonials-avatar h4 {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #007aff;
+}
+
+.listing-carousel-button {
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    background: #007aff;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: background 0.3s ease;
+}
+
+.listing-carousel-button:hover {
+    background: #005bb5;
+}
+
+.listing-carousel-button-prev {
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.listing-carousel-button-next {
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.tc-pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+    background: #384f95;
+    opacity: 1;
+}
 /*-------------------------------------------------------------PÁGINA DESENVOLVEDORES--------------------------------------------------*/
 .desenvolvedores {
     display: flex;
@@ -2243,7 +2391,7 @@ footer .menu-footer .seta-topo a {
     top: 30px;
     height: 50px;
     font-size: 12px;
-     color: var(--third-bg-color);
+    color: var(--third-bg-color);
 }
 
 .desenvolvedores .box-inferior .adriano .card:hover p,
@@ -2442,42 +2590,119 @@ footer .menu-footer .seta-topo a {
 
 /*-------------------------------------------------------------PÁGINA CONTATO----------------------------------------------------------*/
 
-.contact{
-    background: var(--secon-bg-color);
+.contato {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    padding: 40px;
+    background: radial-gradient(var(--main-bg-color), var(--third-bg-color));
+
 }
 
-.contact form{
+.contato .contact-form{
     text-align: center;
     max-width: 50rem;
-    margin: 1rem auto;
-    margin-bottom: 3rem;
+    margin: 0.5rem auto;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 40px 10px 40px;
+    box-shadow: 0 0 28px rgba(0, 0, 0, 1);
+    background: var(--main-bg-color);
+    border-radius: 5px;
 }
 
-.contact form input,
-.contact form textarea{
+.contato .contact-form input,
+.contato .contact-form textarea{
     width: 100%;
-    color: var(--text-color);
-    background: var(--bg-color);
+    color: var(--business-color);
+    background: var(--second-bg-color);
     margin-bottom: .8rem;
-    border: none;
+    border: 1px solid var(--main-font-color);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     padding: .7rem;
 }
-.contact form textarea{
+.contato .contact-form textarea{
     resize: none;
 }
 
-.formBtn{
+.contato .contact-form .mail-form .formBtn{
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.formBtn .btn{
-    cursor: pointer;
+.contato .contact-form .mail-form .formBtn .btn {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    background: var(--second-font-color);
+    color: var(--second-bg-color);
     font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 1px solid #dc680f;
+    box-shadow: 0 0 0.5rem #88ec64;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.6s;
+    cursor: pointer;
 }
+
+.contato .contact-form .mail-form .formBtn .btn:hover {
+    color: #892d06;
+}
+
+.contato .contact-form .mail-form .formBtn .btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: width 0.4s;
+    background:  #96ef62;
+}
+
+.contato .contact-form .mail-form .formBtn .btn:hover::before {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.contato .contact-form .main-text {
+    padding: 15px;
+}
+
+.contato .contact-form .main-text span {
+    font-size: 16px;
+    color: var(--business-color);
+}
+
+.contato .contact-form .main-text h2 {
+    font-size: 24px;
+    font-weight: bolder;
+    color: var(--business-color);
+}
+
+
+
 
 /*----------Parallax----------------------------------------*/
 .scroll-scale{
@@ -2642,5 +2867,7 @@ footer .menu-footer .seta-topo a {
     inherits: false; 
     initial-value: 0deg;
 }
+
+
 
 
